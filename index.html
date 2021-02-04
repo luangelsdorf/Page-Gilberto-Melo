@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>asdasd</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/main.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <img src="./assets/img/logo_sógilbertomelo_png_600%20(1).png" class="img-fluid logo mx-auto d-block" alt="logo">
+            <div class="row w-100 justify-content-center">
+                <div class="col-8 p-0 row">
+                    <div class="col-12 col-lg-2 flex-center" id="aviso">
+                        <span>
+                            AVISO
+                        </span>
+                    </div>
+                    <div class="col-12 col-lg-10 d-flex align-items-center" id="aviso-msg">
+                        <span>
+                            Nosso site está sendo reformulado, enquanto isso disponibilizamos abaixo os links para os FAMs. Obrigado pela compreensão!
+                        </span>
+                    </div>
+                </div>
+                <div class="col-8 p-0 row" style="margin-top: 40px;">
+                    <div class="col-12 col-lg-3 flex-center tab p-3 ativo" id="estadual">Justiça Estadual</div>
+                    <div class="col-12 col-lg-3 flex-center tab p-3" id="federal">Justiça Federal</div>
+                    <div class="col-lg-6"></div>
+
+                    <div class="col-12 p-3 tabs-container">
+                        <p class="bold">Tabelas Uniformes Encaminhadas ao CNJ</p>
+                        <p class="item"><span class="ponto">·</span> Débitos em geral (não expurgada):
+                            <a href="http://gilbertomelo.com.br/fam/jebr_n.php">[PDF]</a> -
+                            <a href="http://gilbertomelo.com.br/fam/jebr_n_xls.php">[XLS]</a>, aprovada pela
+                            <a href="http://gilbertomelo.com.br/?p=1221">Carta de São Luís</a> <br> em 08/1997 - 11º ENCOGE,
+                            <a href="http://gilbertomelo.com.br/pdf/54encogecartadeflorianopolis.pdf">ratificada</a> pelo 54º ENCOGE e
+                            <a href="http://gilbertomelo.com.br/pdf/Pedido_de_providencias_150541.2009CNJ_voto_e_certidao_julgamento.pdf">recomendada pelo CNJ</a>.
+                        </p>
+                        <p class="item"><span class="ponto">·</span> Precatórios expedidos até 25/03/2015 (Res. 303/CNJ modulada):
+                            <a href="https://gilbertomelo.com.br/fam/cnjjenpm.php">[PDF]</a> -
+                            <a href="https://gilbertomelo.com.br/fam/cnjjenpm_xls.php">[XLS]</a>
+                        </p>
+                        <p class="item mb-4"><span class="ponto">·</span> Precatórios expedidos após 25/03/2015 e Débitos da Fazenda antes que se tornem <br> precatórios (Res. 303/CNJ não modulada) -
+                            <a href="https://gilbertomelo.com.br/fam/cnjjenp.php">[PDF]</a> -
+                            <a href="https://gilbertomelo.com.br/fam/cnjjenp_xls.php">[XLS]</a>
+                        </p>
+
+                        <p class="bold">Tabelas de Outros Estados</p>
+                        <p><a class="d-block item" href="http://gilbertomelo.com.br/fam/tjmg.php">· Tabela do TJMG (expurgada)</a></p>
+                        <p><a class="d-block item" href="http://gilbertomelo.com.br/fam/tjsp_n.php">· Tabela do TJSP (não expurgada)</a></p>
+                        <p><a class="d-block item" href="http://gilbertomelo.com.br/fam/tjrj.php">· Tabela do TJRJ (expurgada)</a></p>
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="text-center">Gilberto Melo Engenharia Jurídica - Telefone: 31 3295.2717</div>
+                    <div class="text-center">Av. do Contorno, 6594 - 7º andar - Savassi - Belo Horizonte / MG  | CEP 30110-044</div>
+                </footer>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+
+            document.addEventListener('DOMContentLoaded', () => {
+                document.querySelectorAll('.tab').forEach(m => {
+                    m.addEventListener('click', e => {
+                        if (e.target.id === 'estadual') {
+                            e.target.classList.value = 'col-12 col-lg-3 flex-center tab p-3 ativo'
+                            document.getElementById('federal').classList.value = 'col-12 col-lg-3 flex-center tab p-3'
+                            document.querySelector('.tabs-container').innerHTML = '<p class="bold">Tabelas Uniformes Encaminhadas ao CNJ</p><p class="item"><span class="ponto">·</span> Débitos em geral (não expurgada): <a href="http://gilbertomelo.com.br/fam/jebr_n.php">[PDF]</a> - <a href="http://gilbertomelo.com.br/fam/jebr_n_xls.php">[XLS]</a>, aprovada pela <a href="http://gilbertomelo.com.br/?p=1221">Carta de São Luís</a> <br> em 08/1997 - 11º ENCOGE, <a href="http://gilbertomelo.com.br/pdf/54encogecartadeflorianopolis.pdf">ratificada</a> pelo 54º ENCOGE e <a href="http://gilbertomelo.com.br/pdf/Pedido_de_providencias_150541.2009CNJ_voto_e_certidao_julgamento.pdf">recomendada pelo CNJ</a>.</p><p class="item"><span class="ponto">·</span> Precatórios expedidos até 25/03/2015 (Res. 303/CNJ modulada): <a href="https://gilbertomelo.com.br/fam/cnjjenpm.php">[PDF]</a> - <a href="https://gilbertomelo.com.br/fam/cnjjenpm_xls.php">[XLS]</a></p><p class="item mb-4"><span class="ponto">·</span> Precatórios expedidos após 25/03/2015 e Débitos da Fazenda antes que se tornem <br> precatórios (Res. 303/CNJ não modulada) - <a href="https://gilbertomelo.com.br/fam/cnjjenp.php">[PDF]</a> - <a href="https://gilbertomelo.com.br/fam/cnjjenp_xls.php">[XLS]</a></p><p class="bold">Tabelas de Outros Estados</p><p><a class="d-block item" href="http://gilbertomelo.com.br/fam/tjmg.php">· Tabela do TJMG (expurgada)</a></p><p><a class="d-block item" href="http://gilbertomelo.com.br/fam/tjsp_n.php">· Tabela do TJSP (não expurgada)</a></p><p><a class="d-block item" href="http://gilbertomelo.com.br/fam/tjrj.php">· Tabela do TJRJ (expurgada)</a></p>'
+                        } else {
+                            e.target.classList.value = 'col-12 col-lg-3 flex-center tab p-3 ativo'
+                            document.getElementById('estadual').classList.value = 'col-12 col-lg-3 flex-center tab p-3'
+                            document.querySelector('.tabs-container').innerHTML = '<p><a class="d-block item" href="http://gilbertomelo.com.br/fam/tfbr_gn.php">· Tabela para ações condenatórias em geral (não expurgada)</a></p><p><a class="d-block item" href="http://gilbertomelo.com.br/fam/tfbr_dn.php">· Tabela para ações de desapropriação (não expurgada)</a></p><p><a class="d-block item" href="http://gilbertomelo.com.br/fam/tfbr_pn.php">· Tabela para ações previdenciárias (não expurgada)</a></p>'
+                        }
+                    })
+                })
+            })
+
+        </script>
+    </body>
+</html>

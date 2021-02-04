@@ -1,0 +1,86 @@
+body {
+    font-family: Muli, sans-serif;
+    color: #535353;
+}
+
+a {
+    font-size: 15px;
+    color: #C65509;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C65509;
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: bold !important;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.logo {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+#aviso {
+    color: white !important;
+    font-size: 24px;
+    background-color: #C65509;
+    font-weight: 900;
+}
+
+#aviso span {
+    color: inherit;!important;
+}
+
+#aviso-msg {
+    font-size: 18px;
+    background-color: #f7f7f7;
+    padding: 12px 32px;
+}
+
+.tab {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #eeeeee;
+    color: #848484;
+    cursor: pointer;
+    transition: all 150ms;
+}
+
+.tab:hover {
+    color: #535353;
+}
+
+.tabs-container {
+    background-color: #f7f7f7;
+}
+
+.ponto {
+    color: #C65509;
+}
+
+.item {
+    font-size: 15px;
+}
+
+.ativo {
+    background-color: #f7f7f7 !important;
+    color: #C65509 !important;
+}
+
+footer {
+    margin-top: 35px !important;
+    font-size: 12px;
+}
